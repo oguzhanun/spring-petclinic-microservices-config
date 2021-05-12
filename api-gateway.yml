@@ -21,14 +21,13 @@ spring.messages.basename: messages/messages
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 6000
 
 zuul.host.socket-timeout-millis: 10000
-
+ribbon.ReadTimeout: 60000
 ---
 spring:
   cloud:
     loadbalancer:
       ribbon:
-        enabled: true
-        ReadTimeout: 60000
+        enabled: false
   config:
     activate:
       on-profile: docker
