@@ -31,6 +31,5 @@ spring:
     baseUrl: http://tracing-server:9411
 eureka:
   client:
-    enable: true
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
