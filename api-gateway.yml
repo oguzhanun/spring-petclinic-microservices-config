@@ -18,6 +18,8 @@ server:
 # Internationalization
 spring.messages.basename: messages/messages
 
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=6000
+
 ---
 spring:
   cloud:
