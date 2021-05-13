@@ -42,7 +42,7 @@ spring:
   cloud:
     loadbalancer:
       ribbon:
-        enabled: false
+        enabled: true
   config:
     activate:
       on-profile: docker
