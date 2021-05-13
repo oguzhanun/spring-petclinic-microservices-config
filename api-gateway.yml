@@ -6,6 +6,9 @@ zuul:
     visits-service: /visit/**
     customers-service: /customer/**
     api-gateway: /gateway/**
+  ribbon:
+    eager-load:
+      enabled: true
   
 
 server:
@@ -42,7 +45,7 @@ spring:
   cloud:
     loadbalancer:
       ribbon:
-        enabled: false
+        enabled: true
   config:
     activate:
       on-profile: docker
