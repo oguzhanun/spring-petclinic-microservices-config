@@ -38,6 +38,27 @@ spring.cloud.refresh.refreshable: false
 # Logging
 logging.level.org.springframework: INFO
 
+---
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+---
+zuul:
+  host:
+    socket-timeout-millis: 100000
+
+--- 
+
+ribbon:
+  ReadTimeout: 60000
+
+---
+
 # Metrics
 management:
   endpoint:
