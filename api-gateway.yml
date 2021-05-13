@@ -19,22 +19,22 @@ server:
 spring.messages.basename: messages/messages
 
 ---
-hystrix
-  command
-    default
-      execution
-        isolation
-          thread
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
             timeoutInMilliseconds: 60000
 
 ---
-zuul
-  host
+zuul:
+  host:
     socket-timeout-millis: 100000
 
 --- 
 
-ribbon
+ribbon:
   ReadTimeout: 60000
 
 ---
