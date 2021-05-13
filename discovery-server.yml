@@ -1,4 +1,4 @@
-﻿server:
+server:
   port: 8761
 
 eureka:
@@ -7,6 +7,7 @@ eureka:
     # hostname: localhost
   # standalone mode
   client:
+    enabled: false
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
