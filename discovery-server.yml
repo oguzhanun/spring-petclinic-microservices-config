@@ -7,7 +7,7 @@ eureka:
     # hostname: localhost
   # standalone mode
   client:
-    enabled: false
+    enabled: true
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
