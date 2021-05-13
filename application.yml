@@ -45,17 +45,17 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 160000
 
 ---
 zuul:
   host:
-    socket-timeout-millis: 100000
+    socket-timeout-millis: 160000
 
 --- 
 
 ribbon:
-  ReadTimeout: 60000
+  ReadTimeout: 160000
 
 ---
 
