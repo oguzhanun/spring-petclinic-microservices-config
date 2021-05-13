@@ -42,7 +42,7 @@ spring:
   cloud:
     loadbalancer:
       ribbon:
-        enabled: true
+        enabled: false
   config:
     activate:
       on-profile: docker
@@ -50,6 +50,8 @@ spring:
     baseUrl: http://tracing-server:9411
 eureka:
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
  
