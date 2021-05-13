@@ -7,6 +7,17 @@ eureka:
     preferIpAddress: true
 
 ---
+
+spring:
+  application:
+    name: customers-service
+
+---
+customers-service:
+  ribbon:
+    listOfServers: http://customers-service:8081
+    
+---
 spring:
   config:
     activate:
