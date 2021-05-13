@@ -28,14 +28,14 @@ hystrix:
             timeoutInMilliseconds: 160000
 
 ---
-zuul:
-  host:
-    socket-timeout-millis: 160000
+#zuul:
+ # host:
+  #  socket-timeout-millis: 160000
 
---- 
+#--- 
 
-ribbon:
-  ReadTimeout: 160000
+#ribbon:
+ # ReadTimeout: 160000
 
 ---
 spring:
