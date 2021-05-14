@@ -9,6 +9,7 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
+      clients: customers-service, vets-service, visits-service
   SendErrorFilter:
     post:
       disable: true
