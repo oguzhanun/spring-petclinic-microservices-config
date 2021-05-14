@@ -3,7 +3,6 @@ server:
 
 eureka:
   instance:
-    #hostname: discovery-server
     hostname: localhost
   # standalone mode
   client:
