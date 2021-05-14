@@ -40,10 +40,10 @@ hystrix:
 
 ---
 spring:
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: true
+  #cloud:
+   # loadbalancer:
+    #  ribbon:
+     #   enabled: true
   config:
     activate:
       on-profile: docker
