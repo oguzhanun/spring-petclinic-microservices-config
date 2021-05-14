@@ -12,6 +12,7 @@ zuul:
   SendErrorFilter:
     post:
       disable: true
+  stripPrefix: false
 
 
 hystrix:
