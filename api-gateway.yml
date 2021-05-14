@@ -9,6 +9,9 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
+  SendErrorFilter:
+    post:
+      disable: true
 
 
 hystrix:
