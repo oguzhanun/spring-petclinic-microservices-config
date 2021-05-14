@@ -45,6 +45,7 @@ spring:
     baseUrl: http://tracing-server:9411
 eureka:
   client:
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
  
