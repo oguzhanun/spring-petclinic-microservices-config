@@ -9,7 +9,7 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
-      clients: customers-service, vets-service, visits-service
+      clients: customers-service, vets-service, visits-service, admin-server, discovery-server, hystrix-dashboard, tracing-server
   SendErrorFilter:
     post:
       disable: true
