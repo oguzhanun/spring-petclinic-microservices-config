@@ -51,8 +51,8 @@ spring:
 
 ---
 eureka:
-  instance:
-    hostname: api-gateway
+  # instance:
+   # hostname: api-gateway
   client:
     fetchRegistry: true
     register-with-eureka: true
