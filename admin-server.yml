@@ -6,9 +6,13 @@ spring:
   config:
     activate:
       on-profile: docker
+
+---
 eureka:
   instance:
     hostname: admin-server
   client:
+    fetchRegistry: true
+    register-with-eureka: true
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
