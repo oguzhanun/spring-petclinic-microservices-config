@@ -11,12 +11,17 @@ server:
 
 ---
 spring:
+  application:
+    name: tracing-server
   config:
     activate:
       on-profile: docker
+
+---
 eureka:
   instance:
     hostname: tracing-server
+    instance-id: ${spring.application.name}:${random.uuid}
   client:
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
