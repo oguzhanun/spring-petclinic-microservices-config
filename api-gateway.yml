@@ -34,9 +34,8 @@ hystrix:
 ribbon:
   eureka:
     enabled: true
-  #ReadTimeout: 100000
-  #ConnectTimeout: 100000 
-
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
   
 ---
 server:
